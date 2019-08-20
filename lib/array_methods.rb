@@ -24,7 +24,8 @@ end
 
 def find_min_value(array)
   array.length.times  { |index|
-    array.min == array[index]
-    return array[index]
+    if array.min == array[index]
+      return array[index]
+    end
   }
 end
